@@ -30,7 +30,7 @@ def showReturnStatus():
         if datetime.now() > dueDate:
             daysLate = (datetime.now() - dueDate).days
             print(data["username"]," delayed by ", daysLate, "dueAmount = ", daysLate*dueAmount)
-if _name_ == "_main_":
+if __name__ == "_main_":
     # menu
     while True:
         print("Operations\n1.New Borrow\n2.Show return status\n3.Exit\nChoose operation: ")
